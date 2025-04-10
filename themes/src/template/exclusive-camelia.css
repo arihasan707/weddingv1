@@ -60,12 +60,12 @@ body.camelia {
 /* Original */
 body.camelia.original {
   /* ornament */
-  --bg-desktop: url("http://localhost/ari-nisav1/assets/img/bg-mobile-min.jpg");
-  --bg-mobile: url("http://localhost/ari-nisav1/assets/img/bg-mobile-min.jpg");
-  --texture-body: url("http://localhost/ari-nisav1/assets/img/texture-body-min.png");
-  --cover-frame-mask: url("http://localhost/ari-nisav1/assets/img/cover-masking-min.png");
-  --couple-mask: url("http://localhost/ari-nisav1/assets/img/couple-mask.png");
-  --couple-frame: url("http://localhost/ari-nisav1/assets/img/couple-frame.png");
+  --bg-desktop: url("https://annisaari-theanswerisari.my.id/assets/img/bg-mobile-min.jpg");
+  --bg-mobile: url("https://annisaari-theanswerisari.my.id/assets/img/bg-mobile-min.jpg");
+  --texture-body: url("https://annisaari-theanswerisari.my.id/assets/img/texture-body-min.png");
+  --cover-frame-mask: url("https://annisaari-theanswerisari.my.id/assets/img/cover-masking-min.png");
+  --couple-mask: url("https://annisaari-theanswerisari.my.id/assets/img/couple-mask.png");
+  --couple-frame: url("https://annisaari-theanswerisari.my.id/assets/img/couple-frame.png");
 }
 
 @media only screen and (max-width: 960px) {
