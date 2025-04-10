@@ -1013,7 +1013,7 @@ var post_comment = function (e) {
   postData(data, onSuccess, onError, beforeSend);
 };
 
-$(document).on("submit", "form#weddingWishForm", post_comment);
+// $(document).on("submit", "form#weddingWishForm", post_comment);
 
 // Load Comment
 var load_comment = function () {
@@ -1099,7 +1099,7 @@ var more_comment = function (e) {
   }
 };
 
-$(document).on("click", "#moreComment", more_comment);
+// $(document).on("click", "#moreComment", more_comment);
 
 /*  ==============================
         MUSIC
