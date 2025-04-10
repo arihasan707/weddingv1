@@ -179,4 +179,9 @@ $(document).ready(function () {
   var tes = setInterval(function () {
     makeTimer();
   }, 1000);
+
+  var queryString = new URL(window.location.href).searchParams.get("to");
+  if (queryString) {
+    $(".foot p").html("Kepada Yth<br />" + queryString);
+  }
 });
