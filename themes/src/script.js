@@ -182,6 +182,6 @@ $(document).ready(function () {
 
   var queryString = new URL(window.location.href).searchParams.get("to");
   if (queryString) {
-    $(".foot p").html("Kepada Yth<br />" + queryString);
+    $(".to").html("Kepada Yth<br />" + queryString);
   }
 });
