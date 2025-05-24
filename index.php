@@ -1555,8 +1555,7 @@
                                     <div class="couple-picture-wrap">
                                         <div class="couple-picture lightgallery" data-aos="zoom-out"
                                             data-aos-duration="1000" data-aos-once="false">
-                                            <a class="img-wrap" href="assets/img/thumb/mempelai-pria.jpg"
-                                                target="_blank">
+                                            <a class="img-wrap" href="assets/img/thumb/mempelai-pria.jpg">
                                                 <img class="img" src="assets/img/thumb/mempelai-pria.jpg" alt="">
                                             </a>
                                         </div>
@@ -1636,8 +1635,7 @@
                                     <div class="couple-picture-wrap">
                                         <div class="couple-picture lightgallery" data-aos="zoom-out"
                                             data-aos-duration="1000" data-aos-once="false">
-                                            <a class="img-wrap" href="assets/img/thumb/mempelai-wanita.jpg"
-                                                target="_blank">
+                                            <a class="img-wrap" href="assets/img/thumb/mempelai-wanita.jpg">
                                                 <img class="img" src="assets/img/thumb/mempelai-wanita.jpg" alt="">
                                             </a>
                                         </div>
@@ -2001,8 +1999,7 @@
                                 <div class="slider-container" id="singleSliderContainer">
                                     <div class="slider-item">
                                         <div class="preview singleSliderPicture lightgallery">
-                                            <a href="assets/img/potret_love/IMG_5279.jpg" class="anchor"
-                                                target="_blank">
+                                            <a href="assets/img/potret_love/IMG_5279.jpg" class="anchor">
                                                 <img src="assets/img/potret_love/IMG_5279.jpg" alt="IMG_3029.jpeg"
                                                     class="img" loading="lazy">
                                             </a>
@@ -2010,8 +2007,7 @@
                                     </div>
                                     <div class="slider-item">
                                         <div class="preview singleSliderPicture lightgallery">
-                                            <a href="assets/img/potret_love/ANNISA-(20).jpg" class="anchor"
-                                                target="_blank">
+                                            <a href="assets/img/potret_love/ANNISA-(20).jpg" class="anchor">
                                                 <img src="assets/img/potret_love/ANNISA-(20).jpg" alt="IMG_3029.jpeg"
                                                     class="img" loading="lazy">
                                             </a>
@@ -2019,8 +2015,7 @@
                                     </div>
                                     <div class="slider-item">
                                         <div class="preview singleSliderPicture lightgallery">
-                                            <a href="assets/img/potret_love/ANNISA-(21).jpg" class="anchor"
-                                                target="_blank">
+                                            <a href="assets/img/potret_love/ANNISA-(21).jpg" class="anchor">
                                                 <img src="assets/img/potret_love/ANNISA-(21).jpg" alt="IMG_3029.jpeg"
                                                     class="img" loading="lazy">
                                             </a>
@@ -2028,8 +2023,7 @@
                                     </div>
                                     <div class="slider-item">
                                         <div class="preview singleSliderPicture lightgallery">
-                                            <a href="assets/img/potret_love/ANNISA-(22).jpg" class="anchor"
-                                                target="_blank">
+                                            <a href="assets/img/potret_love/ANNISA-(22).jpg" class="anchor">
                                                 <img src="assets/img/potret_love/ANNISA-(22).jpg" alt="IMG_3029.jpeg"
                                                     class="img" loading="lazy">
                                             </a>
@@ -2037,8 +2031,7 @@
                                     </div>
                                     <div class="slider-item">
                                         <div class="preview singleSliderPicture lightgallery">
-                                            <a href="assets/img/potret_love/ANNISA-(23).jpg" class="anchor"
-                                                target="_blank">
+                                            <a href="assets/img/potret_love/ANNISA-(23).jpg" class="anchor">
                                                 <img src="assets/img/potret_love/ANNISA-(23).jpg" alt="IMG_3029.jpeg"
                                                     class="img" loading="lazy">
                                             </a>
@@ -2046,8 +2039,7 @@
                                     </div>
                                     <div class="slider-item">
                                         <div class="preview singleSliderPicture lightgallery">
-                                            <a href="assets/img/potret_love/ANNISA-(70).jpg" class="anchor"
-                                                target="_blank">
+                                            <a href="assets/img/potret_love/ANNISA-(70).jpg" class="anchor">
                                                 <img src="assets/img/potret_love/ANNISA-(70).jpg" alt="IMG_3024.jpeg"
                                                     class="img" loading="lazy">
                                             </a>
@@ -2055,8 +2047,7 @@
                                     </div>
                                     <div class="slider-item">
                                         <div class="preview singleSliderPicture lightgallery">
-                                            <a href="assets/img/potret_love/ANNISA-(14).jpg" class="anchor"
-                                                target="_blank">
+                                            <a href="assets/img/potret_love/ANNISA-(14).jpg" class="anchor">
                                                 <img src="assets/img/potret_love/ANNISA-(14).jpg" alt="IMG_3043.jpeg"
                                                     class="img" loading="lazy">
                                             </a>
@@ -2064,8 +2055,7 @@
                                     </div>
                                     <div class="slider-item">
                                         <div class="preview singleSliderPicture lightgallery">
-                                            <a href="assets/img/potret_love/ANNISA-(77).jpg" class="anchor"
-                                                target="_blank">
+                                            <a href="assets/img/potret_love/ANNISA-(77).jpg" class="anchor">
                                                 <img src="assets/img/potret_love/ANNISA-(77).jpg" alt="IMG_3041.jpeg"
                                                     class="img" loading="lazy">
                                             </a>
@@ -2128,7 +2118,7 @@
                                     <div class="slider-item">
                                         <div class="preview singleSliderPicture lightgallery">
                                             <a href="assets/img/potret_love/WhatsApp-Image-2025-04-08-at-01.34.jpg"
-                                                class="anchor" target="_blank">
+                                                class="anchor">
                                                 <img src="assets/img/potret_love/WhatsApp-Image-2025-04-08-at-01.34.jpg"
                                                     alt="IMG_3025.jpeg" class="img" loading="lazy">
                                             </a>
@@ -2137,7 +2127,7 @@
                                     <div class="slider-item">
                                         <div class="preview singleSliderPicture lightgallery">
                                             <a href="assets/img/potret_love/WhatsApp-Image-2025-04-08-at-01.29.jpg"
-                                                class="anchor" target="_blank">
+                                                class="anchor">
                                                 <img src="assets/img/potret_love/WhatsApp-Image-2025-04-08-at-01.29.jpg"
                                                     alt="IMG_3039.jpeg" class="img" loading="lazy">
                                             </a>
@@ -2146,7 +2136,7 @@
                                     <div class="slider-item">
                                         <div class="preview singleSliderPicture lightgallery">
                                             <a href="assets/img/potret_love/WhatsApp-Image-2025-04-08-at-01.22.jpg"
-                                                class="anchor" target="_blank">
+                                                class="anchor">
                                                 <img src="assets/img/potret_love/WhatsApp-Image-2025-04-08-at-01.22.jpg"
                                                     alt="IMG_3032.jpeg" class="img" loading="lazy">
                                             </a>
@@ -2154,8 +2144,7 @@
                                     </div>
                                     <div class="slider-item">
                                         <div class="preview singleSliderPicture lightgallery">
-                                            <a href="assets/img/potret_love/IMG_4994.jpg" class="anchor"
-                                                target="_blank">
+                                            <a href="assets/img/potret_love/IMG_4994.jpg" class="anchor">
                                                 <img src="assets/img/potret_love/IMG_4994.jpg" alt="IMG_3028.jpeg"
                                                     class="img" loading="lazy">
                                             </a>
@@ -2217,7 +2206,7 @@
                             <div class="row gx-2 mb-2" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
                                 <div class="col-4">
                                     <div class="singleSliderPicture lightgallery">
-                                        <a href="assets/img/the engagement/IMG_6413.jpg" class="anchor" target="_blank">
+                                        <a href="assets/img/the engagement/IMG_6413.jpg" class="anchor">
                                             <img src="assets/img/the engagement/IMG_6413.jpg" alt="" class="img"
                                                 loading="lazy">
                                         </a>
@@ -2225,8 +2214,7 @@
                                 </div>
                                 <div class="col-4">
                                     <div class="singleSliderPicture lightgallery">
-                                        <a href="assets/img/the engagement/IMG_9381-2.jpg" class="anchor"
-                                            target="_blank">
+                                        <a href="assets/img/the engagement/IMG_9381-2.jpg" class="anchor">
                                             <img src="assets/img/the engagement/IMG_9381-2.jpg" alt="" class="img"
                                                 loading="lazy">
                                         </a>
@@ -2234,7 +2222,7 @@
                                 </div>
                                 <div class="col-4">
                                     <div class="singleSliderPicture lightgallery">
-                                        <a href="assets/img/the engagement/IMG_9385.jpg" class="anchor" target="_blank">
+                                        <a href="assets/img/the engagement/IMG_9385.jpg" class="anchor">
                                             <img src="assets/img/the engagement/IMG_9385.jpg" alt="" class="img"
                                                 loading="lazy">
                                         </a>
@@ -2244,7 +2232,7 @@
                             <div class="row gx-2 mb-2" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
                                 <div class="col-8">
                                     <div class="preview singleSliderPicture lightgallery">
-                                        <a href="assets/img/the engagement/AFE08987.jpg" class="anchor" target="_blank">
+                                        <a href="assets/img/the engagement/AFE08987.jpg" class="anchor">
                                             <img src="assets/img/the engagement/AFE08987.jpg" alt="" class="img"
                                                 loading="lazy">
                                         </a>
@@ -2252,7 +2240,7 @@
                                 </div>
                                 <div class="col-4">
                                     <div class="preview singleSliderPicture lightgallery">
-                                        <a href="assets/img/the engagement/IMG_6417.jpg" class="anchor" target="_blank">
+                                        <a href="assets/img/the engagement/IMG_6417.jpg" class="anchor">
                                             <img src="assets/img/the engagement/IMG_6417.jpg" alt="" class="img"
                                                 loading="lazy">
                                         </a>
@@ -2263,7 +2251,7 @@
                                 data-aos-delay="400">
                                 <div class="col-4">
                                     <div class="preview singleSliderPicture lightgallery">
-                                        <a href="assets/img/the engagement/IMG_6414.jpg" class="anchor" target="_blank">
+                                        <a href="assets/img/the engagement/IMG_6414.jpg" class="anchor">
                                             <img src="assets/img/the engagement/IMG_6414.jpg" alt="" class="img"
                                                 loading="lazy">
                                         </a>
@@ -2271,7 +2259,7 @@
                                 </div>
                                 <div class="col-8">
                                     <div class="preview singleSliderPicture lightgallery">
-                                        <a href="assets/img/the engagement/cincin.jpg" class="anchor" target="_blank">
+                                        <a href="assets/img/the engagement/cincin.jpg" class="anchor">
                                             <img src="assets/img/the engagement/cincin.jpg" alt="" class="img"
                                                 loading="lazy">
                                         </a>
@@ -2281,7 +2269,7 @@
                             <div class="row mb-2" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
                                 <div class="col-12">
                                     <div class="preview singleSliderPicture lightgallery">
-                                        <a href="assets/img/the engagement/AFE08507.jpg" class="anchor" target="_blank">
+                                        <a href="assets/img/the engagement/AFE08507.jpg" class="anchor">
                                             <img src="assets/img/the engagement/AFE08507.jpg" alt="" class="img"
                                                 loading="lazy">
                                         </a>
@@ -2291,7 +2279,7 @@
                             <div class="row gx-2" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
                                 <div class="col-6">
                                     <div class="preview singleSliderPicture lightgallery">
-                                        <a href="assets/img/the engagement/IMG_9475.jpg" class="anchor" target="_blank">
+                                        <a href="assets/img/the engagement/IMG_9475.jpg" class="anchor">
                                             <img src="assets/img/the engagement/IMG_9475.jpg" alt="" class="img"
                                                 loading="lazy">
                                         </a>
@@ -2299,7 +2287,7 @@
                                 </div>
                                 <div class="col-6">
                                     <div class="preview singleSliderPicture lightgallery">
-                                        <a href="assets/img/the engagement/IMG_9453.jpg" class="anchor" target="_blank">
+                                        <a href="assets/img/the engagement/IMG_9453.jpg" class="anchor">
                                             <img src="assets/img/the engagement/IMG_9453.jpg" alt="" class="img"
                                                 loading="lazy">
                                         </a>
