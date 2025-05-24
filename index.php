@@ -2798,7 +2798,7 @@
         var BANK_OPTIONS = [{
             "id": 10310,
             "title": "BANK BCA",
-            "credential": "6044467334"
+            "credential": "7330525911"
         }];
 
         // RSVP
