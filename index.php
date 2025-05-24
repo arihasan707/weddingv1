@@ -1998,64 +1998,64 @@
                             <div class="gallery__single-slider" data-aos="fade-left" data-aos-duration="1200">
                                 <div class="slider-container" id="singleSliderContainer">
                                     <div class="slider-item">
-                                        <div class="preview singleSliderPicture lightgallery">
-                                            <a href="assets/img/potret_love/IMG_5279.jpg" class="anchor">
+                                        <div class="preview singleSliderPicture">
+                                            <a data-fslightbox href="assets/img/potret_love/IMG_5279.jpg">
                                                 <img src="assets/img/potret_love/IMG_5279.jpg" alt="IMG_3029.jpeg"
                                                     class="img" loading="lazy">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="slider-item">
-                                        <div class="preview singleSliderPicture lightgallery">
-                                            <a href="assets/img/potret_love/ANNISA-(20).jpg" class="anchor">
+                                        <div class="preview singleSliderPicture">
+                                            <a data-fslightbox href="assets/img/potret_love/ANNISA-(20).jpg">
                                                 <img src="assets/img/potret_love/ANNISA-(20).jpg" alt="IMG_3029.jpeg"
                                                     class="img" loading="lazy">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="slider-item">
-                                        <div class="preview singleSliderPicture lightgallery">
-                                            <a href="assets/img/potret_love/ANNISA-(21).jpg" class="anchor">
+                                        <div class="preview singleSliderPicture">
+                                            <a data-fslightbox href="assets/img/potret_love/ANNISA-(21).jpg">
                                                 <img src="assets/img/potret_love/ANNISA-(21).jpg" alt="IMG_3029.jpeg"
                                                     class="img" loading="lazy">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="slider-item">
-                                        <div class="preview singleSliderPicture lightgallery">
-                                            <a href="assets/img/potret_love/ANNISA-(22).jpg" class="anchor">
+                                        <div class="preview singleSliderPicture">
+                                            <a data-fslightbox href="assets/img/potret_love/ANNISA-(22).jpg">
                                                 <img src="assets/img/potret_love/ANNISA-(22).jpg" alt="IMG_3029.jpeg"
                                                     class="img" loading="lazy">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="slider-item">
-                                        <div class="preview singleSliderPicture lightgallery">
-                                            <a href="assets/img/potret_love/ANNISA-(23).jpg" class="anchor">
+                                        <div class="preview singleSliderPicture">
+                                            <a data-fslightbox href="assets/img/potret_love/ANNISA-(23).jpg">
                                                 <img src="assets/img/potret_love/ANNISA-(23).jpg" alt="IMG_3029.jpeg"
                                                     class="img" loading="lazy">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="slider-item">
-                                        <div class="preview singleSliderPicture lightgallery">
-                                            <a href="assets/img/potret_love/ANNISA-(70).jpg" class="anchor">
+                                        <div class="preview singleSliderPicture">
+                                            <a data-fslightbox href="assets/img/potret_love/ANNISA-(70).jpg">
                                                 <img src="assets/img/potret_love/ANNISA-(70).jpg" alt="IMG_3024.jpeg"
                                                     class="img" loading="lazy">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="slider-item">
-                                        <div class="preview singleSliderPicture lightgallery">
-                                            <a href="assets/img/potret_love/ANNISA-(14).jpg" class="anchor">
+                                        <div class="preview singleSliderPicture">
+                                            <a data-fslightbox href="assets/img/potret_love/ANNISA-(14).jpg">
                                                 <img src="assets/img/potret_love/ANNISA-(14).jpg" alt="IMG_3043.jpeg"
                                                     class="img" loading="lazy">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="slider-item">
-                                        <div class="preview singleSliderPicture lightgallery">
-                                            <a href="assets/img/potret_love/ANNISA-(77).jpg" class="anchor">
+                                        <div class="preview singleSliderPicture">
+                                            <a data-fslightbox href="assets/img/potret_love/ANNISA-(77).jpg">
                                                 <img src="assets/img/potret_love/ANNISA-(77).jpg" alt="IMG_3041.jpeg"
                                                     class="img" loading="lazy">
                                             </a>
@@ -2116,35 +2116,35 @@
                                     </div>
                                 </div> -->
                                     <div class="slider-item">
-                                        <div class="preview singleSliderPicture lightgallery">
-                                            <a href="assets/img/potret_love/WhatsApp-Image-2025-04-08-at-01.34.jpg"
-                                                class="anchor">
+                                        <div class="preview singleSliderPicture">
+                                            <a data-fslightbox
+                                                href="assets/img/potret_love/WhatsApp-Image-2025-04-08-at-01.34.jpg">
                                                 <img src="assets/img/potret_love/WhatsApp-Image-2025-04-08-at-01.34.jpg"
                                                     alt="IMG_3025.jpeg" class="img" loading="lazy">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="slider-item">
-                                        <div class="preview singleSliderPicture lightgallery">
-                                            <a href="assets/img/potret_love/WhatsApp-Image-2025-04-08-at-01.29.jpg"
-                                                class="anchor">
+                                        <div class="preview singleSliderPicture">
+                                            <a data-fslightbox
+                                                href="assets/img/potret_love/WhatsApp-Image-2025-04-08-at-01.29.jpg">
                                                 <img src="assets/img/potret_love/WhatsApp-Image-2025-04-08-at-01.29.jpg"
                                                     alt="IMG_3039.jpeg" class="img" loading="lazy">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="slider-item">
-                                        <div class="preview singleSliderPicture lightgallery">
-                                            <a href="assets/img/potret_love/WhatsApp-Image-2025-04-08-at-01.22.jpg"
-                                                class="anchor">
+                                        <div class="preview singleSliderPicture">
+                                            <a data-fslightbox
+                                                href="assets/img/potret_love/WhatsApp-Image-2025-04-08-at-01.22.jpg">
                                                 <img src="assets/img/potret_love/WhatsApp-Image-2025-04-08-at-01.22.jpg"
                                                     alt="IMG_3032.jpeg" class="img" loading="lazy">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="slider-item">
-                                        <div class="preview singleSliderPicture lightgallery">
-                                            <a href="assets/img/potret_love/IMG_4994.jpg" class="anchor">
+                                        <div class="preview singleSliderPicture">
+                                            <a data-fslightbox href="assets/img/potret_love/IMG_4994.jpg">
                                                 <img src="assets/img/potret_love/IMG_4994.jpg" alt="IMG_3028.jpeg"
                                                     class="img" loading="lazy">
                                             </a>
@@ -2865,11 +2865,12 @@
     <script src="themes/plugin/slick/slick.min.js"></script>
     <script src="themes/plugin/selectize/dist/js/standalone/selectize.min.js"></script>
     <script src="themes/plugin/modal-video/js/jquery-modal-video.min.js"></script>
-    <script src="themes/plugin/lightgallery/dist/js/lightgallery.min.js"></script>
+    <!-- <script src="themes/plugin/lightgallery/dist/js/lightgallery.min.js"></script> -->
     <script src="themes/src/universal.js"></script>
     <script src="themes/src/template/template.js"></script>
     <script src="themes/src/template/js/exclusive-camelia.js"></script>
     <script src="themes/src/script.js"></script>
+    <script src="themes/src/fslightbox.js"></script>
 
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
