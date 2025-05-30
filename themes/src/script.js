@@ -1,12 +1,12 @@
 // custom
 $(document).ready(function () {
   var start = 5;
+  let url = "https://admin.annisaari-theanswerisari.my.id";
 
   comment();
   function comment() {
     let form = "#weddingWishForm";
     let submitButton = $(form).find("button.submit");
-    let url = "https://admin.annisaari-theanswerisari.my.id";
     // console.log(page);
 
     $.ajax({
