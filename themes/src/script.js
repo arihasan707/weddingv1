@@ -12,7 +12,10 @@ $(document).ready(function () {
     $.ajax({
       url: `${url}/api/commentar`,
       type: "get",
-      dataType: "json",
+
+      xhrFields: {
+        withCredentials: true,
+      },
       success: function (response) {
         $(".comment-wrap").html("");
 
