@@ -6,10 +6,11 @@ $(document).ready(function () {
   function comment() {
     let form = "#weddingWishForm";
     let submitButton = $(form).find("button.submit");
+    let url = "https://admin.annisaari-theanswerisari.my.id";
     // console.log(page);
 
     $.ajax({
-      url: "http://ari-nisa.test/api/commentar",
+      url: `${url}/api/commentar`,
       dataType: "json",
       success: function (response) {
         $(".comment-wrap").html("");
@@ -81,7 +82,7 @@ $(document).ready(function () {
 
     $.ajax({
       type: "post",
-      url: "http://ari-nisa.test/api/commentar/add",
+      url: `${url}/api/commentar/add`,
       data: data,
       dataType: "json",
       success: function (response) {
@@ -98,7 +99,7 @@ $(document).ready(function () {
 
     $.ajax({
       type: "get",
-      url: "http://ari-nisa.test/api/commentar/load",
+      url: `${url}/api/commentar/load`,
       dataType: "json",
       data: {
         start: start,
