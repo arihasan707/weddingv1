@@ -11,6 +11,7 @@ $(document).ready(function () {
 
     $.ajax({
       url: `${url}/api/commentar`,
+      type: "get",
       dataType: "json",
       success: function (response) {
         $(".comment-wrap").html("");
