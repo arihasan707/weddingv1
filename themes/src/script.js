@@ -1,7 +1,7 @@
 // custom
 $(document).ready(function () {
   var start = 5;
-  let url = "https://admin.annisaari-theanswerisari.my.id/sanctum/csrf-cookie";
+  let url = "https://admin.annisaari-theanswerisari.my.id";
 
   comment();
   function comment() {
