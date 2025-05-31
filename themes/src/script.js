@@ -10,12 +10,8 @@ $(document).ready(function () {
     // console.log(page);
 
     $.ajax({
-      url: `${url}/api/commentar`,
+      url: "https://admin.annisaari-theanswerisari.my.id/api/commentar",
       type: "get",
-
-      xhrFields: {
-        withCredentials: true,
-      },
       success: function (response) {
         $(".comment-wrap").html("");
 
