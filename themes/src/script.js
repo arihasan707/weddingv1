@@ -1,7 +1,7 @@
 // custom
 $(document).ready(function () {
   var start = 5;
-  let url = "https://admin.annisaari-theanswerisari.my.id";
+  let url = "https`://admin.annisaari-theanswerisari.my.id";
 
   comment();
   function comment() {
@@ -10,7 +10,7 @@ $(document).ready(function () {
     // console.log(page);
 
     $.ajax({
-      url: "https://admin.annisaari-theanswerisari.my.id/api/commentar",
+      url: `${url}/api/commentar`,
       type: "get",
       header: {
         "Content-Type": "application/json",
