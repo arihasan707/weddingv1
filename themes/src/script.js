@@ -12,6 +12,10 @@ $(document).ready(function () {
     $.ajax({
       url: "https://admin.annisaari-theanswerisari.my.id/api/commentar",
       type: "get",
+      header: {
+        "Content-Type": "application/json",
+        Accep: "application/json",
+      },
       success: function (response) {
         $(".comment-wrap").html("");
 
