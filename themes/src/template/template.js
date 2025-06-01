@@ -2516,8 +2516,8 @@ $(document).ready(function () {
   const submitComment = document.querySelector(".submit-comment");
   const nama_komentar = document.getElementById("name");
   const text_komentar = document.getElementById("text");
-  let url = "https://admin.annisaari-theanswerisari.my.id";
-  // let url = "http://ari-nisa.test";
+  // let url = "https://admin.annisaari-theanswerisari.my.id";
+  let url = "http://ari-nisa.test";
   let page = 1;
   const limit = 5;
 
@@ -2552,27 +2552,29 @@ $(document).ready(function () {
     }
   }
 
-  async function addData() {
+  async function addData(page) {
     try {
-      const response = await fetch(`${url}/api/commentar`);
+      const response = await fetch(
+        `${url}/api/commentar?page=${page}&limit=${limit}`
+      );
       const data = await response.json();
       const fragment = document.createDocumentFragment();
 
-      const newItem = document.createElement("div");
-      newItem.classList.add("comment-item");
-      newItem.setAttribute("data-aos", "fade-up");
-      newItem.setAttribute("data-aos-duration", "1200");
-      newItem.innerHTML = `
-                             <div class="comment-head"><h3 class="comment-name">${data.data.nama}</h3>
-                             <small class="comment-date">${data.data.dibuat} WIB</small></div><div class="comment-body">
-                             <p class="comment-caption">${data.data.text}</p></div>`;
-      fragment.appendChild(newItem);
-
+      if (data.data.length > 0) {
+        data.data.forEach((element) => {
+          const newItem = document.createElement("div");
+          newItem.classList.add("comment-item");
+          newItem.setAttribute("data-aos", "fade-up");
+          newItem.setAttribute("data-aos-duration", "1200");
+          newItem.innerHTML = `
+                             <div class="comment-head"><h3 class="comment-name">${element.nama}</h3>
+                             <small class="comment-date">${element.dibuat} WIB</small></div><div class="comment-body">
+                             <p class="comment-caption">${element.text}</p></div>`;
+          fragment.appendChild(newItem);
+        });
+      }
+      dataContainer.innerHTML = "";
       dataContainer.insertBefore(fragment, dataContainer.firstChild);
-
-      $(document)
-        .find("input, select, textarea, button")
-        .prop("disabled", false);
       nama_komentar.value = "";
       text_komentar.value = "";
       submitComment.innerText = "Send";
@@ -2580,6 +2582,9 @@ $(document).ready(function () {
       console.error("Error loading data", error);
     } finally {
       showAlert("Komentar berhasi di kirim", "success");
+      $(document)
+        .find("input, select, textarea, button")
+        .prop("disabled", false);
       moreComment.parentElement.classList.add("show");
     }
   }
@@ -2619,21 +2624,23 @@ $(document).ready(function () {
     };
 
     if (data.nama && data.text != "") {
-      $(this).find("input, select, textarea, button").prop("disabled", true);
-      $(this)
-        .find("button.submit")
-        .html('Sending... <i class="fas fa-spinner fa-spin"></i>');
-    }
+      if (data.nama && data.text != "") {
+        $(this).find("input, select, textarea, button").prop("disabled", true);
+        $(this)
+          .find("button.submit")
+          .html('Sending... <i class="fas fa-spinner fa-spin"></i>');
+      }
 
-    $.ajax({
-      type: "post",
-      url: `${url}/api/commentar/add`,
-      data: data,
-      dataType: "json",
-      success: function (element) {
-        addData();
-      },
-    });
+      $.ajax({
+        type: "post",
+        url: `${url}/api/commentar/add`,
+        data: data,
+        dataType: "json",
+        success: function (element) {
+          addData((page = 1));
+        },
+      });
+    }
   });
 
   function makeTimer() {
