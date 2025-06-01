@@ -2516,8 +2516,8 @@ $(document).ready(function () {
   const submitComment = document.querySelector(".submit-comment");
   const nama_komentar = document.getElementById("name");
   const text_komentar = document.getElementById("text");
-  // let url = "https://admin.annisaari-theanswerisari.my.id";
-  let url = "http://ari-nisa.test";
+  let url = "https://admin.annisaari-theanswerisari.my.id";
+  // let url = "http://ari-nisa.test";
   let page = 1;
   const limit = 5;
 
