@@ -3125,7 +3125,7 @@ section.protocol-04 .protocol-item-wrap .protocol-item .text-wrap .text {
 /* Details */
 .footnote .footnote-title {
   font-size: calc(var(--heading-size) + var(--fs-extra-2) + var(--fs-extra-8));
-  max-width: 250px;
+  max-width: 259px;
   margin: 0 auto;
   padding: 5px;
   z-index: 1;
