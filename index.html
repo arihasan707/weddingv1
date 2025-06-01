@@ -1255,13 +1255,13 @@
 
             --heading-family: "Cinzel Decorative", display !important;
             --heading-style: normal !important;
-            --heading-weight: 400 !important;
-            --heading-size: 27px !important;
+            /* --heading-weight: 400 !important;
+            --heading-size: 37px !important; */
             --heading-lettercase: capitalize !important;
             --body-text-family: "Bacasime Antique", serif !important;
             --body-text-style: normal !important;
             --body-text-weight: 400 !important;
-            --body-text-size: 15px !important;
+            /* --body-text-size: 20px !important; */
             --body-text-lettercase: capitalize !important;
         }
     </style>
@@ -1277,7 +1277,7 @@
             --background-tertiary-rgb: 255, 255, 255 !important;
             --text-primary: #7f2831 !important;
             --text-primary-rgb: 127, 40, 49 !important;
-            --text-secondary: #84a4d4 !important;
+            --text-secondary: #7aadda !important;
             --text-secondary-rgb: 132, 164, 212 !important;
             --text-tertiary: #84275a !important;
             --text-tertiary-rgb: 132, 39, 90 !important;
@@ -2512,8 +2512,8 @@
 
                                     <!-- Bank Wrap -->
                                     <div class="wedding-gift-bank-wrap">
-                                        <div class="bank-item" id="savingBook10310">
-                                            <div class="bank-detail text-center">
+                                     <div class="bank-item" id="savingBook7063">
+                                         <div class="bank-detail text-center">
                                                 <h3 class="bank-name">BANK BCA (014)</h3>
                                                 <div>
                                                     <small class="bank-account-number-label">Account Number</small>
@@ -2525,9 +2525,24 @@
                                                     <h4 class="bank-account-name">Annisa Puspita Sari</h4>
                                                 </div>
                                             </div>
-                                        </div>
+                                     </div>
+                                     <div class="bank-item" id="savingBook7075">
+                                         <div class="bank-detail text-center">
+                                                <h3 class="bank-name">BANK BSI (451)</h3>
+                                                <div>
+                                                    <small class="bank-account-number-label">Account Number</small>
+                                                    <h4 class="bank-account-number" data-copy="7200982929">7200982929 <i
+                                                            class="ph ph-copy-simple"></i></h4>
+                                                </div>
+                                                <div>
+                                                    <small class="bank-account-name-label">Account Name</small>
+                                                    <h4 class="bank-account-name">Ari Hasan Basri</h4>
+                                                </div>
+                                            </div>
+                                     </div>
+            
                                     </div>
-
+                            
                                     <!-- Sender Data -->
                                     <div class="wedding-gift-sender-data-wrap">
                                         <!-- <label>Fill the form below, please</label> -->
@@ -2675,13 +2690,14 @@
                             </form>
                         </div>
 
-                        <div class="comment-wrap">
-                            <!-- COMMENTS -->
-
-                        </div>
-
-                        <div class="more-comment-wrap">
-                            <button type="button" id="moreComment" data-template="" data-start="0"
+                        
+                            <div id="comment-wrap">
+                                <!-- COMMENTS -->
+    
+                            </div>
+                      
+                        <div class="more-comment-wrap " data-aos="fade-up" data-aos-duration="1200">
+                            <button type="button" id="more-comment" data-template="" data-start="0"
                                 data-load-text="Loading">Show more comments</button>
                         </div>
 
@@ -2779,11 +2795,8 @@
         var EVENT = 1719055800;
 
         // Banks
-        var BANK_OPTIONS = [{
-            "id": 10310,
-            "title": "BANK BCA",
-            "credential": "7330525911"
-        }];
+         // Banks
+    var BANK_OPTIONS = [{"id":7063,"title":"BANK BCA","credential":"7330525911"},{"id":7075,"title":"BANK BSI","credential":"7200982929"}];
 
         // RSVP
         var RSVP = {
@@ -2863,7 +2876,6 @@
     <script src="themes/src/universal.js"></script>
     <script src="themes/src/template/template.js"></script>
     <script src="themes/src/template/js/exclusive-camelia.js"></script>
-    <script src="themes/src/script.js"></script>
     <script src="themes/src/fslightbox.js"></script>
 
     <!-- bootstrap -->

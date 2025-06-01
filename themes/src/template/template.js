@@ -69,7 +69,7 @@ function showAlert(message, status) {
     $alert.removeClass(); // Remove All Class
     $alert.addClass("alert show " + status);
     $alertText.text(message);
-    setTimeout(hideAlert, 3000);
+    setTimeout(hideAlert, 5000);
   }
 }
 
@@ -2505,5 +2505,179 @@ document.addEventListener("visibilitychange", function () {
   } else if (document.visibilityState === "hidden") {
     // when you are out nowhere
     if (typeof pauseMusic === "function") pauseMusic(); // pause the background playing music
+  }
+});
+
+// custom
+
+$(document).ready(function () {
+  const dataContainer = document.getElementById("comment-wrap");
+  const moreComment = document.getElementById("more-comment");
+  const submitComment = document.querySelector(".submit-comment");
+  const nama_komentar = document.getElementById("name");
+  const text_komentar = document.getElementById("text");
+  // let url = "https://admin.annisaari-theanswerisari.my.id";
+  let url = "http://ari-nisa.test";
+  let page = 1;
+  const limit = 5;
+
+  async function loadData(page) {
+    try {
+      const response = await fetch(
+        `${url}/api/commentar?page=${page}&limit=${limit}`
+      );
+      const data = await response.json();
+
+      if (data.data.length > 0) {
+        data.data.forEach((element) => {
+          const newItem = document.createElement("div");
+          newItem.classList.add("comment-item");
+          newItem.setAttribute("data-aos", "fade-up");
+          newItem.setAttribute("data-aos-duration", "1200");
+          newItem.innerHTML = `
+                             <div class="comment-head"><h3 class="comment-name">${element.nama}</h3>
+                             <small class="comment-date">${element.dibuat} WIB</small></div><div class="comment-body">
+                             <p class="comment-caption">${element.text}</p></div>`;
+          dataContainer.appendChild(newItem);
+        });
+
+        moreComment.parentElement.classList.add("show");
+      } else {
+        moreComment.parentElement.classList.remove("show");
+      }
+    } catch (error) {
+      console.error("Error loading data", error);
+    } finally {
+      moreComment.innerText = "Show more comments";
+    }
+  }
+
+  async function addData() {
+    try {
+      const response = await fetch(`${url}/api/commentar`);
+      const data = await response.json();
+      const fragment = document.createDocumentFragment();
+
+      const newItem = document.createElement("div");
+      newItem.classList.add("comment-item");
+      newItem.setAttribute("data-aos", "fade-up");
+      newItem.setAttribute("data-aos-duration", "1200");
+      newItem.innerHTML = `
+                             <div class="comment-head"><h3 class="comment-name">${data.data.nama}</h3>
+                             <small class="comment-date">${data.data.dibuat} WIB</small></div><div class="comment-body">
+                             <p class="comment-caption">${data.data.text}</p></div>`;
+      fragment.appendChild(newItem);
+
+      dataContainer.insertBefore(fragment, dataContainer.firstChild);
+
+      $(document)
+        .find("input, select, textarea, button")
+        .prop("disabled", false);
+      nama_komentar.value = "";
+      text_komentar.value = "";
+      submitComment.innerText = "Send";
+    } catch (error) {
+      console.error("Error loading data", error);
+    } finally {
+      showAlert("Komentar berhasi di kirim", "success");
+    }
+  }
+
+  //fungsi tombol load more komentar
+  moreComment.addEventListener("click", function () {
+    page++;
+    loadData(page);
+    moreComment.innerHTML = "<i class='fas fa-spinner fa-spin'></i>";
+  });
+
+  //pemuatan data awal komentar
+  loadData(page);
+
+  $("#weddingWishForm").submit(function (e) {
+    e.preventDefault();
+    $.saniteze = function (input) {
+      /*
+  	var output = input.replace(/<script[^>]*?>.*?<\/script>/gi, '').
+  				 replace(/<[\/\!]*?[^<>]*?>/gi, '').
+  				 replace(/<style[^>]*?>.*?<\/style>/gi, '').
+  				 replace(/<![\s\S]*?--[ \t\n\r]*>/gi, '');
+      return output;
+        */
+      return input.replace(
+        /<(|\/|[^>\/bi]|\/[^>bi]|[^\/>][^>]+|\/[^>][^>]+)>/g,
+        ""
+      );
+    };
+
+    let name = $("#name").val();
+    let text = $("#text").val();
+
+    let data = {
+      nama: $.saniteze(name),
+      text: $.saniteze(text),
+    };
+
+    if (data.nama && data.text != "") {
+      $(this).find("input, select, textarea, button").prop("disabled", true);
+      $(this)
+        .find("button.submit")
+        .html('Sending... <i class="fas fa-spinner fa-spin"></i>');
+    }
+
+    $.ajax({
+      type: "post",
+      url: `${url}/api/commentar/add`,
+      data: data,
+      dataType: "json",
+      success: function (element) {
+        addData();
+      },
+    });
+  });
+
+  function makeTimer() {
+    //		var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");
+    var endTime = new Date("21 Juni 2025 10:00:00 GMT+7");
+    endTime = Date.parse(endTime) / 1000;
+
+    var now = new Date();
+    now = Date.parse(now) / 1000;
+
+    var timeLeft = endTime - now;
+
+    var days = Math.floor(timeLeft / 86400);
+    var hours = Math.floor((timeLeft - days * 86400) / 3600);
+    var minutes = Math.floor((timeLeft - days * 86400 - hours * 3600) / 60);
+    var seconds = Math.floor(
+      timeLeft - days * 86400 - hours * 3600 - minutes * 60
+    );
+
+    if (hours < "10") {
+      hours = "0" + hours;
+    }
+    if (minutes < "10") {
+      minutes = "0" + minutes;
+    }
+    if (seconds < "10") {
+      seconds = "0" + seconds;
+    }
+
+    $(".count-day").html(days);
+    $(".count-hour").html(hours);
+    $(".count-minute").html(minutes);
+    $(".count-second").html(seconds);
+
+    if (timeLeft == -1) {
+      clearTimeout(tes);
+    }
+  }
+
+  var tes = setInterval(function () {
+    makeTimer();
+  }, 1000);
+
+  var queryString = new URL(window.location.href).searchParams.get("to");
+  if (queryString) {
+    $(".to").html("Kepada Yth<br />" + queryString);
   }
 });

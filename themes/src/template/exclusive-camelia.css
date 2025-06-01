@@ -4,7 +4,7 @@ body.camelia {
   --heading-family: "Carattere", cursive;
   --heading-style: normal;
   --heading-weight: 400;
-  --heading-size: calc(13vw - 2.752px);
+  --heading-size: calc(10vw - 2.752px);
   --heading-lettercase: none;
 
   /* Body Text */
@@ -76,14 +76,14 @@ body.camelia.original {
 
 @media (min-width: 560px) and (max-width: 960px) {
   body.camelia {
-    --heading-size: 56px;
+    --heading-size: 40px;
     --body-text-size: 18px;
   }
 }
 
 @media (min-width: 961px) {
   body.camelia {
-    --heading-size: 56px;
+    --heading-size: 40px;
     --body-text-size: 18px;
   }
 }
@@ -316,7 +316,7 @@ input:-webkit-autofill:active {
 }
 
 .kat-page__side-to-side .primary-pane .inner .details h1 {
-  max-width: 360px;
+  max-width: 290px;
   font-size: calc(var(--heading-size) + var(--fs-extra-3) + var(--fs-extra-2));
   text-align: center;
 }
@@ -329,7 +329,7 @@ input:-webkit-autofill:active {
 }
 
 .kat-page__side-to-side .primary-pane .inner .foot p {
-  font-size: calc(var(--heading-size) - var(--fs-extra-7) - var(--fs-extra-7));
+  font-size: calc(56px - var(--fs-extra-7) - var(--fs-extra-7));
   font-family: var(--body-text-family);
   font-weight: 500;
   color: var(--text-primary);
@@ -368,7 +368,7 @@ input:-webkit-autofill:active {
   }
   .kat-page__side-to-side .primary-pane .inner .details h1 {
     font-size: calc(
-      var(--heading-size) + var(--fs-extra-8) + var(--fs-extra-4)
+      var(--heading-size) + var(--fs-extra-8) + var(--fs-extra-4) - 13px
     );
   }
   .kat-page__side-to-side .primary-pane .inner .foot {
@@ -459,6 +459,7 @@ section.top-cover .inner .details h1 {
   font-style: normal;
 }
 section.top-cover .inner .foot {
+  top: 10px;
   position: relative;
   text-align: center;
   z-index: 1;
@@ -978,7 +979,7 @@ section.cover .inner .foot p {
 }
 .separator-wrap .separator .couple-separator {
   font-family: var(--heading-family);
-  font-size: calc(var(--heading-size) - 0px);
+  font-size: calc(var(--heading-size) + 13px);
   margin: auto;
   color: var(--text-primary);
 }
@@ -1157,13 +1158,13 @@ section.cover .inner .foot p {
   max-width: 200px;
   margin: 0 auto;
   margin-bottom: 8px;
-  font-size: calc(var(--heading-size) - 0px);
+  font-size: calc(var(--heading-size) - 12px);
   color: var(--text-primary);
   border-bottom: 1px solid var(--button-background-primary);
 }
 
 .activity-head .activity-description {
-  font-size: calc(var(--body-text-size) - var(--fs-extra-2));
+  font-size: calc(var(--body-text-size) + var(--fs-extra-2));
   margin-bottom: 0.25em;
   color: var(--text-primary);
 }
@@ -1175,9 +1176,13 @@ section.cover .inner .foot p {
 }
 
 .activity-head .activity-time {
-  font-size: calc(var(--body-text-size) + 0px);
+  font-size: calc(var(--body-text-size) + 6px);
   font-weight: 700;
   color: var(--text-tertiary);
+}
+
+.form-group input::placeholder {
+  color: black;
 }
 
 /* Agenda Details */
@@ -1276,9 +1281,9 @@ section.cover .inner .foot p {
     height: 100px;
   }
 
-  .activity-head .activity-title {
+  /* .activity-head .activity-title {
     font-size: calc(var(--heading-size) - var(--fs-extra-5));
-  }
+  } */
 
   .activity-item:nth-child(odd) .activity-head .activity-description {
     font-size: calc(var(--body-text-size) - var(--fs-extra-1));
@@ -2902,7 +2907,7 @@ section.protocol-04 .protocol-item-wrap .protocol-item .text-wrap .text {
   font-family: var(--body-text-family);
   font-size: var(--body-text-size);
   line-height: 1.5;
-  color: var(--text-secondary);
+  color: #7a2e58;
 }
 .wedding-wish-form .form-control::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -2968,11 +2973,11 @@ section.protocol-04 .protocol-item-wrap .protocol-item .text-wrap .text {
 }
 
 /* Comment Wrap */
-.comment-wrap {
+#comment-wrap {
   padding: 0 20px 30px;
   /* display: none; */
 }
-.comment-wrap.show {
+#comment-wrap.show {
   display: block;
 }
 .comment-item {
@@ -3031,11 +3036,12 @@ section.protocol-04 .protocol-item-wrap .protocol-item .text-wrap .text {
   display: none;
   text-align: center;
 }
+
 .more-comment-wrap.show {
   display: block;
 }
 
-#moreComment {
+#more-comment {
   border: none;
   outline: none;
   width: 100%;
@@ -3053,7 +3059,7 @@ section.protocol-04 .protocol-item-wrap .protocol-item .text-wrap .text {
   cursor: pointer;
   transition: all 0.25s ease-in-out;
 }
-#moreComment:hover {
+#more-comment:hover {
   background-color: rgba(var(--button-background-primary-rgb), 0.8);
 }
 
@@ -3650,7 +3656,7 @@ section.footnote-wrap .frame {
     max-width: 360px;
   }
   section.top-cover .inner .details h1 {
-    max-width: 260px;
+    max-width: 310px;
   }
   .orn-rsvp-2 {
     width: 35%;
