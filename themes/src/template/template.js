@@ -2580,6 +2580,7 @@ $(document).ready(function () {
       console.error("Error loading data", error);
     } finally {
       showAlert("Komentar berhasi di kirim", "success");
+      moreComment.parentElement.classList.add("show");
     }
   }
 
