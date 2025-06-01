@@ -2581,7 +2581,7 @@ $(document).ready(function () {
     } catch (error) {
       console.error("Error loading data", error);
     } finally {
-      showAlert("Komentar berhasi di kirim", "success");
+      showAlert("Komentar berhasil di kirim", "success");
       $(document)
         .find("input, select, textarea, button")
         .prop("disabled", false);
