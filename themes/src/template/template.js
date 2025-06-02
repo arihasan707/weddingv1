@@ -2575,17 +2575,8 @@ $(document).ready(function () {
       }
       dataContainer.innerHTML = "";
       dataContainer.insertBefore(fragment, dataContainer.firstChild);
-      nama_komentar.value = "";
-      text_komentar.value = "";
-      submitComment.innerText = "Send";
     } catch (error) {
       console.error("Error loading data", error);
-    } finally {
-      showAlert("Komentar berhasil di kirim", "success");
-      $(document)
-        .find("input, select, textarea, button")
-        .prop("disabled", false);
-      moreComment.parentElement.classList.add("show");
     }
   }
 
@@ -2638,6 +2629,14 @@ $(document).ready(function () {
         dataType: "json",
         success: function (element) {
           addData((page = 1));
+          nama_komentar.value = "";
+          text_komentar.value = "";
+          submitComment.innerText = "Send";
+          showAlert("Komentar berhasil di kirim", "success");
+          $(document)
+            .find("input, select, textarea, button")
+            .prop("disabled", false);
+          moreComment.parentElement.classList.add("show");
         },
       });
     }
